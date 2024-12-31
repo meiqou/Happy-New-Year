@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year!</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #e7c4ad, #b4927f); 
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            animation: glow 1.5s infinite;
+            font-family: 'Cursive', sans-serif;
+            color: #fff;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px #fff, 0 0 20px #d0a98f, 0 0 30px #b08972;
+        }
+        p {
+            font-size: 2em;
+            margin: 1em 0 2em;
+            font-family: 'Cursive', sans-serif;
+            letter-spacing: 2px;
+        }
+        .fireworks {
+            font-size: 2.5em;
+            animation: sparkle 2s infinite alternate;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 1.4em;
+            color: #fff;
+            background-color: #ac8a77;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 60px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            z-index: 2;
+        }
+        .button:hover {
+            background-color: #8b6f5f;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #fff, 0 0 20px #d0a98f, 0 0 30px #b08972; }
+            50% { text-shadow: 0 0 30px #fff, 0 0 50px #d0a98f, 0 0 70px #b08972; }
+            100% { text-shadow: 0 0 10px #fff, 0 0 20px #d0a98f, 0 0 30px #b08972; }
+        }
+        @keyframes sparkle {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.2); opacity: 0.6; }
+        }
+        .sparkle-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2ppdHBsMjExZ3JudnBhbWRzdWUwNm1id29id2VyM2xpcmlzcml5MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jWcQLzQUa6rQc/giphy.gif') repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 1;
+            opacity: 0.05;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="sparkle-background"></div>
+    <div class="confetti"></div>
+
+    <div class="fireworks">°⋆♡︎.ೃ࿔:･ </div>
+    <h1>Happy New Year 2025!</h1>
+    <p>𝓘 𝓵𝓸𝓿𝓮 𝔂𝓸𝓾!</p>
+    <div class="fireworks">‧₊˚ ☁️⋅♡𓂃 ࣪ ִֶָ☾.</div>
+    <a href="message.html" class="button">────୨ৎ────</a>
+</body>
+</html>
